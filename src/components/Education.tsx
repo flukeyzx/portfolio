@@ -30,7 +30,7 @@ const Education = () => {
         <h3 className="text-3xl max-sm:text-xl font-semibold">
           What is the record of my formal academic education? <br />
         </h3>
-        <p className="mt-2 dark:text-gray-100 opacity-75 max-sm:text-sm">
+        <p className="mt-2 opacity-75 max-sm:text-sm">
           I am currently pursuing a Bachelor's degree in Information Technology
           at Muhammad Nawaz Sharif University of Agriculture, Multan. I
           completed my Intermediate studies in ICS at Government Millat College,
@@ -41,7 +41,7 @@ const Education = () => {
       </div>
       <div>
         {data && (
-          <div className="flex flex-col justify-center items-center max-w-72 bg-gray-200 dark:bg-slate-700 p-4 rounded-xl">
+          <div className="flex flex-col justify-center items-center max-w-72 p-4 rounded-xl backdrop-brightness-125">
             <img
               src={data.image}
               alt={data.name}
@@ -51,7 +51,7 @@ const Education = () => {
             <h3 className="mt-2 font-semibold text-center leading-5">
               {data.name}
             </h3>
-            <div className="mt-2 flex flex-col justify-center items-center text-gray-600 dark:text-gray-400 text-xs">
+            <div className="mt-2 flex flex-col justify-center items-cente text-xs">
               <p className="">Batch: {data.date}</p>
               <p>Degree: {data.degree}</p>
               <p>Marks: {data.marks}</p>
@@ -59,13 +59,13 @@ const Education = () => {
             <div className="flex justify-center items-center mt-4 gap-4">
               <button
                 onClick={() => handleSlider(-1)}
-                className="bg-gray-100 dark:text-black rounded-full px-4 py-2 text-xl hover:opacity-75"
+                className="bg-primary rounded-full px-4 py-2 text-xl hover:opacity-75"
               >
                 {"<"}
               </button>
               <button
                 onClick={() => handleSlider(1)}
-                className="bg-gray-100 dark:text-black rounded-full px-4 py-2 text-xl hover:opacity-75"
+                className="bg-primary rounded-full px-4 py-2 text-xl hover:opacity-75"
               >
                 {">"}
               </button>

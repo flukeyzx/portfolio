@@ -7,13 +7,6 @@ import {
   useContext,
 } from "react";
 
-type Theme = "light" | "dark";
-
-interface ThemeContextProps {
-  theme: Theme;
-  toggleTheme: () => void;
-}
-
 const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
 const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {

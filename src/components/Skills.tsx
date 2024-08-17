@@ -16,9 +16,7 @@ const Skills = () => {
       <div className="mt-8 flex items-center gap-2">
         <button
           className={`w-32 px-6 py-2 rounded-full text-center ${
-            activeButton === "Skills"
-              ? "bg-blue-500 text-white"
-              : "bg-gray-300 text-black"
+            activeButton === "Skills" ? "btn btn-primary" : "btn"
           }`}
           onClick={() => setActiveButton("Skills")}
         >
@@ -26,16 +24,14 @@ const Skills = () => {
         </button>
         <button
           className={`w-32 px-6 py-2 rounded-full text-center ${
-            activeButton === "Education"
-              ? "bg-blue-500 text-white"
-              : "bg-gray-300 text-black"
+            activeButton === "Education" ? "btn btn-primary" : "btn"
           }`}
           onClick={() => setActiveButton("Education")}
         >
           Education
         </button>
       </div>
-      <div className="flex max-md:flex-col items-center mt-4 justify-between gap-8 dark:bg-slate-800 bg-gray-300 w-full max-w-4xl max-lg:max-w-3xl max-md:max-w-2xl max-sm:max-w-xs max-sm:px-6 mx-10 px-12 py-8 rounded-2xl">
+      <div className="flex max-md:flex-col items-center mt-4 justify-between gap-8 bg-neutral text-neutral-content w-full max-w-4xl max-lg:max-w-3xl max-md:max-w-2xl max-sm:max-w-xs max-sm:px-6 mx-10 px-12 py-8 rounded-2xl">
         {activeButton === "Skills" ? <SkillsSection /> : <Education />}
       </div>
     </div>

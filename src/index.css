@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 :root {
+  --primary-color: theme('colors.primary');
+  --secondary-color: theme('colors.secondary');
+}
+
+:root {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -19,7 +24,7 @@ textarea {
 }
 
 .gradient-letter {
-  background: linear-gradient(to right, #38a9f7, #1c80f7, #8c27f1);
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -44,8 +49,8 @@ button {
   overflow: hidden;
 }
 .custom-scrollbar {
-  scrollbar-width: thin; /* Firefox */
-  scrollbar-color: transparent transparent; /* Firefox */
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent; 
 }
 
 .custom-scrollbar::-webkit-scrollbar {

@@ -24,7 +24,7 @@ const About = () => {
       <div className="flex items-center gap-4">
         <a
           href="#projects"
-          className="flex gap-4 items-center bg-gray-300 dark:bg-gray-100 text-black max-sm:px-6 px-10 max-sm:text-sm py-3 rounded-lg hover:-translate-y-1 hover:opacity-85 transition-transform"
+          className="flex gap-4 items-center btn max-sm:px-6 px-10 max-sm:text-sm py-3 rounded-lg hover:-translate-y-1 hover:opacity-85 transition-transform"
         >
           View Projects
           <FaArrowUpRightFromSquare />
@@ -33,7 +33,7 @@ const About = () => {
           href={document}
           target="_blank"
           download="CV"
-          className="flex gap-4 items-center cursor-pointer bg-blue-500 text-white px-10 py-3 max-sm:px-6 max-sm:text-sm rounded-lg hover:-translate-y-1 hover:opacity-85 transition-transform"
+          className="flex gap-4 items-center cursor-pointer btn btn-primary px-10 py-3 max-sm:px-6 max-sm:text-sm rounded-lg hover:-translate-y-1 hover:opacity-85 transition-transform"
         >
           Download CV
           <FaDownload />
