@@ -26,7 +26,7 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col gap-1 dark:bg-slate-800 bg-gray-200 px-6 py-4 rounded-2xl cursor-pointer hover:-translate-y-1 transition-transform"
+            className="flex flex-col gap-1 bg-neutral text-neutral-content px-6 py-4 rounded-2xl cursor-pointer hover:-translate-y-1 transition-transform"
             onClick={() => setSelectedId(project.id)}
           >
             <div className="flex">
@@ -49,10 +49,10 @@ const Projects = () => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-gray-100 dark:bg-gray-800 w-full max-w-3xl h-full p-10 rounded-lg shadow-lg relative overflow-y-auto custom-scrollbar"
+            className="bg-neutral text-neutral-content w-full max-w-3xl h-full p-10 rounded-lg shadow-lg relative overflow-y-auto custom-scrollbar"
           >
             <FaWindowClose
-              className="absolute right-10 top-6 max-sm:right-5 max-sm:top-4 text-sky-500 cursor-pointer"
+              className="absolute right-10 top-6 max-sm:right-5 max-sm:top-4 text-secondary cursor-pointer"
               size={35}
               onClick={() => setSelectedId(null)}
             />
