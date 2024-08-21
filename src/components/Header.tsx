@@ -5,7 +5,9 @@ const Header = () => {
     <nav className="py-6 px-8">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl font-semibold flex items-center gap-2 cursor-pointer">
-          <span className="gradient-letter text-3xl">{"<Portfolio/>  "}</span>
+          <span className="gradient-letter text-3xl max-sm:text-lg">
+            {"<Portfolio/>  "}
+          </span>
         </h2>
         <div className="flex items-center gap-8">
           <ThemeController />
