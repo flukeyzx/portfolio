@@ -16,7 +16,7 @@ const About = () => {
     >
       <motion.div
         variants={animText}
-        className="text-5xl xl:text-7xl max-sm:text-3xl font-semibold text-center max-sm:px-2"
+        className="text-5xl xl:text-6xl max-sm:text-3xl font-semibold text-center max-sm:px-2"
       >
         <span className="gradient-letter">Hello!</span> I am{" "}
         <span className="gradient-letter"></span>Abdul Ahad <br /> A Full Stack{" "}

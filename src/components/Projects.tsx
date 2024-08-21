@@ -21,12 +21,14 @@ const Projects = () => {
       id="projects"
       className="flex flex-col justify-center items-center mt-20 relative"
     >
-      <h2 className="text-4xl max-sm:text-2xl font-bold">Projects</h2>
+      <h2 className="text-4xl xl:text-5xl max-sm:text-2xl font-bold">
+        Projects
+      </h2>
       <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 mt-8 px-10 py-4 w-full mb-10 justify-items-center">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col gap-1 bg-neutral text-neutral-content px-6 py-4 rounded-2xl cursor-pointer hover:-translate-y-1 transition-transform"
+            className="flex flex-col gap-1 shadow-lg shadow-primary px-6 py-4 rounded-2xl cursor-pointer hover:-translate-y-1 transition-transform"
             onClick={() => setSelectedId(project.id)}
           >
             <div className="flex">
