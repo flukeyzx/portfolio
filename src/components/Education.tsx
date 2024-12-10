@@ -4,6 +4,7 @@ import { education } from "../utils/constants";
 const Education = () => {
   const [count, setCount] = useState(0);
   const [data, setData] = useState(education[0]);
+  const [transitioning, setTransitioning] = useState(false);
 
   useEffect(() => {
     if (count >= 0 && count < education.length) {
@@ -12,6 +13,7 @@ const Education = () => {
   }, [count]);
 
   const handleSlider = (value: number) => {
+    setTransitioning(true);
     setCount((prevCount) => {
       const newCount = prevCount + value;
       if (newCount < 0) {
@@ -42,19 +44,27 @@ const Education = () => {
       <div>
         {data && (
           <div className="flex flex-col justify-center items-center max-w-72 xl:max-w-80 p-4 rounded-xl bg-primary text-primary-content">
-            <img
-              src={data.image}
-              alt={data.name}
-              width={200}
-              className="object-cover aspect-square rounded-xl xl:w-56"
-            />
-            <h3 className="mt-2 font-semibold text-center leading-5 xl:text-lg">
-              {data.name}
-            </h3>
-            <div className="mt-2 flex flex-col justify-center items-center text-xs xl:text-sm">
-              <p className="">Batch: {data.date}</p>
-              <p>Degree: {data.degree}</p>
-              <p>Marks: {data.marks}</p>
+            <div
+              className={`flex flex-col justify-center items-center p-4 rounded-xl bg-primary text-primary-content transition-opacity duration-500 ease-in-out ${
+                transitioning ? "opacity-0" : "opacity-100"
+              }`}
+              onTransitionEnd={() => setTransitioning(false)}
+            >
+              <img
+                src={data.image}
+                alt={data.name}
+                width={200}
+                className="object-cover aspect-square rounded-xl xl:w-56"
+                loading="lazy"
+              />
+              <h3 className="mt-2 font-semibold text-center leading-5 xl:text-lg">
+                {data.name}
+              </h3>
+              <div className="mt-2 flex flex-col justify-center items-center text-xs xl:text-sm">
+                <p>Degree: {data.degree}</p>
+                <p>Marks: {data.marks}</p>
+                <p>Batch: {data.date}</p>
+              </div>
             </div>
             <div className="flex justify-center items-center mt-4 gap-4">
               <button

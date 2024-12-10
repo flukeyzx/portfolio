@@ -29,7 +29,7 @@ const Header = () => {
         </div>
         <div className="flex gap-6 justify-between items-center max-sm:w-full max-sm:justify-center">
           <ThemeController />
-          <button className="hover:bg-primary max-sm:hidden transition-all border-2 border-primary px-5 py-2 rounded-md text-primary hover:text-neutral">
+          <button className="hover:bg-primary max-sm:hidden transition-all border-2 border-primary px-5 py-2 rounded-md text-primary hover:text-neutral font-bold">
             Hire Me
           </button>
         </div>

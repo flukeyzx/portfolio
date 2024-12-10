@@ -1,12 +1,13 @@
 import { skills } from "../utils/constants";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const SkillsSection = () => {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
   return (
     <>
-      <div className="flex-1">
+      <motion.div className="flex-1">
         <h3 className="text-3xl xl:text-4xl max-sm:text-xl font-semibold">
           What are the tools and technologies <br /> included in my Tech Stack?
         </h3>
@@ -16,8 +17,8 @@ const SkillsSection = () => {
           experience in database systems, developing responsive design, complex
           UI components, and backend development.
         </p>
-      </div>
-      <div className="grid grid-cols-4 max-md:grid-cols-8 max-sm:grid-cols-5 gap-2 relative">
+      </motion.div>
+      <motion.div className="grid grid-cols-4 max-md:grid-cols-8 max-sm:grid-cols-5 gap-2 relative">
         {skills.map((s, index) => (
           <div
             key={index}
@@ -37,7 +38,7 @@ const SkillsSection = () => {
             )}
           </div>
         ))}
-      </div>
+      </motion.div>
     </>
   );
 };

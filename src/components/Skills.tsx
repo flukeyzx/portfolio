@@ -31,7 +31,7 @@ const Skills = () => {
           Education
         </button>
       </div>
-      <div className="flex max-md:flex-col items-center mt-8 justify-between gap-8 shadow-2xl shadow-primary w-full max-w-4xl xl:max-w-5xl max-lg:max-w-3xl max-md:max-w-2xl max-sm:max-w-xs max-sm:px-6 mx-10 px-12 py-8 rounded-2xl">
+      <div className="flex max-md:flex-col items-center mt-8 justify-between gap-8 w-full max-w-4xl xl:max-w-5xl max-lg:max-w-3xl max-md:max-w-2xl max-sm:max-w-xs max-sm:px-6 mx-10 px-8 py-8 rounded-2xl">
         {activeButton === "Skills" ? <SkillsSection /> : <Education />}
       </div>
     </div>

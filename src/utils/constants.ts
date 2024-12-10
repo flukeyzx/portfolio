@@ -144,23 +144,23 @@ export const skills = [
 
 export const education = [
   {
-    name: "Muhammad Nawaz Sharif University of Agriculture, Multan",
-    marks: "3.74/4.00",
+    name: "Muhammad Nawaz Sharif University, Multan",
+    marks: "3.74",
     degree: "BSIT",
     date: "2021-25",
     image: university,
   },
   {
     name: "Government Millat Degree College, Multan",
-    marks: "1082/1100",
+    marks: "98%",
     degree: "ICS",
     date: "2019-2021",
     image: college,
   },
   {
     name: "Government Bukhari Public High School, Multan",
-    marks: "883/1100",
-    degree: "Computer Science",
+    marks: "80%",
+    degree: "CS",
     date: "2017-2019",
     image: school,
   },
