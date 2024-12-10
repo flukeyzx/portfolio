@@ -1,4 +1,4 @@
-import About from "../components/About";
+import Hero from "../components/Hero";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <div className="min-h-screen">
         <Header />
-        <About />
+        <Hero />
       </div>
       <Skills />
       <Projects />

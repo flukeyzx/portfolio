@@ -1,17 +1,21 @@
 import ThemeController from "./ThemeController";
+import Logo from "./Logo";
 
 const Header = () => {
   return (
     <nav className="py-6 px-8">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-semibold flex items-center gap-2 cursor-pointer">
-          <span className="gradient-letter text-3xl max-sm:hidden">
-            {"<Portfolio/>  "}
-          </span>
-        </h2>
-        <div className="flex items-center max-sm:justify-center max-sm:w-full gap-8">
-          <ThemeController />
-          <div className="flex gap-2 text-lg cursor-pointer max-sm:hidden">
+        <div className="flex items-center gap-3">
+          <Logo />
+        </div>
+        <div className="flex items-center max-sm:justify-center max-sm:hidden gap-8">
+          <div className="flex gap-4 text-xl cursor-pointer">
+            <a href="#home" className="hover:text-primary">
+              Home
+            </a>
+            <a href="#about" className="hover:text-primary">
+              About
+            </a>
             <a href="#skills" className="hover:text-primary">
               Skills
             </a>
@@ -22,6 +26,12 @@ const Header = () => {
               Contact
             </a>
           </div>
+        </div>
+        <div className="flex gap-6 justify-between items-center max-sm:w-full max-sm:justify-center">
+          <ThemeController />
+          <button className="hover:bg-primary max-sm:hidden transition-all border-2 border-primary px-5 py-2 rounded-md text-primary hover:text-neutral">
+            Hire Me
+          </button>
         </div>
       </div>
     </nav>
