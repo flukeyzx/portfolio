@@ -12,14 +12,14 @@ const Hero = () => {
       initial="hidden"
       animate="show"
       exit="exit"
-      className="flex flex-col lg:flex-row items-center justify-center gap-12 mt-12 px-4 lg:px-16"
+      className="flex flex-col lg:flex-row items-center justify-center gap-12 mt-16 px-4 xl:px-28 lg:px-20"
     >
       {/* Left Section */}
       <motion.div
         variants={animText}
-        className="flex flex-col gap-6 text-center lg:text-left lg:w-3/5"
+        className="flex flex-col gap-6 text-center lg:text-left"
       >
-        <h1 className="text-3xl xl:text-5xl max-sm:text-3xl font-semibold">
+        <h1 className="xl:text-5xl 2xl:text-6xl text-4xl max-sm:text-3xl font-semibold">
           <span className="gradient-letter">Hello!</span> I am{" "}
           <span className="gradient-letter"></span>Abdul Ahad <br /> A Full
           Stack <span className="gradient-letter">Software Engineer.</span>

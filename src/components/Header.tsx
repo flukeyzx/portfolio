@@ -3,13 +3,13 @@ import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <nav className="py-6 px-8">
+    <nav className="py-6 px-8 xl:px-28 lg:px-20">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-3">
           <Logo />
         </div>
         <div className="flex items-center max-sm:justify-center max-sm:hidden gap-8">
-          <div className="flex gap-4 text-xl cursor-pointer">
+          <div className="flex gap-4 text-xl max-lg:hidden cursor-pointer">
             <a href="#home" className="hover:text-primary">
               Home
             </a>

@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <div className="h-22 w-52 cursor-pointer">
+    <div className="h-24 w-52 xl:w-64 cursor-pointer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 300 100"
