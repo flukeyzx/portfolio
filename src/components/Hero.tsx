@@ -2,7 +2,7 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaDownload } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { pageAnimation, animText } from "../utils/animation";
-import document from "../assets/CV.pdf";
+import document from "../assets/resume.pdf";
 import heroImage from "../assets/hero.svg";
 
 const Hero = () => {
@@ -14,20 +14,22 @@ const Hero = () => {
       exit="exit"
       className="flex flex-col lg:flex-row items-center justify-center gap-12 mt-16 px-4 xl:px-28 lg:px-20"
     >
-      {/* Left Section */}
       <motion.div
         variants={animText}
         className="flex flex-col gap-6 text-center lg:text-left"
       >
-        <h1 className="xl:text-5xl 2xl:text-6xl text-4xl max-sm:text-3xl font-semibold">
-          <span className="gradient-letter">Hello!</span> I am{" "}
-          <span className="gradient-letter"></span>Abdul Ahad <br /> A Full
-          Stack <span className="gradient-letter">Software Engineer.</span>
+        <h1 className="text-4xl sm:text-5xl xl:text-5xl 2xl:text-6xl font-bold leading-tight">
+          <span className="gradient-letter block">Hi! I'm Abdul Ahad</span>
+          <span className="text-xl sm:text-xl 2xl:text-2xl text-base-content/80 block mt-3 font-semibold">
+            A Full Stack Software Engineer with a passion for building fast, and
+            scalable software.
+          </span>
         </h1>
+
         <div className="flex items-center gap-4 justify-center lg:justify-start">
           <a
             href="#projects"
-            className="flex gap-4 btn max-sm:px-6 px-8 max-sm:text-sm xl:px-8 xl:pb-8 xl:pt-5 py-2 rounded-lg hover:-translate-y-1 hover:opacity-85 transition-transform"
+            className="flex border-2 border-l-secondary gap-4 btn max-sm:px-6 px-8 max-sm:text-sm xl:px-8 xl:pb-8 xl:pt-5 py-2 rounded-lg hover:-translate-y-1 hover:opacity-85 hover:border-l-secondary transition-transform"
           >
             View Projects
             <FaArrowUpRightFromSquare />
@@ -44,12 +46,11 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      {/* Right Section */}
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="lg:w-1/2 bg-transparent"
+        className="lg:w-1/2 bg-transparent "
       >
         <img
           src={heroImage}

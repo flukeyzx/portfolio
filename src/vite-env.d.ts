@@ -1,7 +1,6 @@
 /// <reference types="vite/client" />
 
-
-type Theme = "light" | "dark";
+type Theme = "emerald" | "dark";
 
 interface ThemeContextProps {
   theme: Theme;
