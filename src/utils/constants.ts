@@ -18,17 +18,6 @@ import school from "../assets/bukhari.jpg";
 import college from "../assets/millat.jpg";
 import university from "../assets/uni.jpg";
 
-import servis2 from "../assets/project/Screenshot (94).png";
-import servis3 from "../assets/project/Screenshot (95).png";
-import servis4 from "../assets/project/Screenshot (96).png";
-import servis5 from "../assets/project/Screenshot (97).png";
-import servis6 from "../assets/project/Screenshot (98).png";
-import servis7 from "../assets/project/Screenshot (99).png";
-import photography1 from "../assets/project/Screenshot (127).png";
-import photography2 from "../assets/project/Screenshot (128).png";
-import photography3 from "../assets/project/Screenshot (129).png";
-import photography4 from "../assets/project/Screenshot (130).png";
-
 export const skills = [
   {
     name: "HTML",
