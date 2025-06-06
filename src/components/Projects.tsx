@@ -31,7 +31,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="flex flex-col justify-center items-center mt-20 relative md:px-12 px-4"
+      className="flex flex-col justify-center items-center mt-20 relative md:px-12 2xl:px-20 px-4"
     >
       <h2 className="text-3xl md:text-4xl max-sm:text-2xl font-bold">
         Featured Work
@@ -40,7 +40,7 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col bg-gradient-to-tl from-primary/15 via-neutral/10 to-secondary/20 gap-3 px-5 pt-5 pb-6 rounded-2xl cursor-pointer hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-linear w-full max-w-sm"
+            className="flex flex-col justify-center bg-gradient-to-tl from-primary/15 via-neutral/10 to-secondary/20 gap-3 px-5 pt-5 pb-6 rounded-2xl cursor-pointer hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-linear w-full max-w-sm 2xl:max-w-lg"
             onClick={() => setSelectedId(project.id)}
           >
             <div className="overflow-hidden">

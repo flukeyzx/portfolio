@@ -5,11 +5,11 @@ import { MdSupportAgent } from "react-icons/md";
 
 const Services = () => {
   return (
-    <section className="flex flex-col justify-center items-center mt-20 relative md:px-12 px-4">
+    <section className="flex flex-col justify-center items-center mt-20 relative md:px-12 2xl:px-20 px-4">
       <h2 className="text-3xl md:text-4xl max-sm:text-2xl font-bold">
         Services I Offer
       </h2>
-      <div className="grid xl:grid-cols-2 md:grid-cols-2 gap-6 w-full mt-10 p-8 mb-32">
+      <div className="grid 2xl:grid-cols-4 md:grid-cols-2 gap-6 w-full mt-10 p-8 mb-32">
         <div className="px-6 py-8 rounded-2xl hover:-translate-y-1 shadow-md shadow-secondary hover:shadow-lg hover:shadow-secondary transition-all duration-300 ease-in-out cursor-pointer">
           <h2 className="text-secondary flex gap-2 items-center xl:text-xl font-semibold mb-2">
             <FaQuidditch className="xl:size-6" />

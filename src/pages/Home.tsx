@@ -10,7 +10,7 @@ import Services from "../components/Services";
 const Home = () => {
   return (
     <div className="">
-      <div className="min-h-screen md:px-12">
+      <div className="min-h-screen md:px-12 2xl:px-20">
         <Header />
         <Hero />
       </div>

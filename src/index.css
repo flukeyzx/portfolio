@@ -5,6 +5,12 @@
 :root {
   --primary-color: theme("colors.primary");
   --secondary-color: theme("colors.secondary");
+  --primary-content: theme("colors.primary-content");
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--primary-content);
 }
 
 :root {
