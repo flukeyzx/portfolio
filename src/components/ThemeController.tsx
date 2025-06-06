@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const ThemeController = () => {
   const [theme, setTheme] = useState<string>(
-    () => localStorage.getItem("theme") || "dark"
+    () => localStorage.getItem("theme") || "emerald"
   );
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const ThemeController = () => {
   };
 
   return (
-    <div className="dropdown">
+    <div className="dropdown relative inline-block">
       <div tabIndex={0} role="button" className="btn m-1">
         Theme
         <svg
@@ -32,16 +32,27 @@ const ThemeController = () => {
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl"
+        className="dropdown-content absolute right-0 mt-2 z-50 w-52 bg-base-300 rounded-box shadow-2xl max-h-64 overflow-y-auto p-2"
       >
         <li>
+          <li>
+            <input
+              type="radio"
+              name="theme-dropdown"
+              className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+              aria-label="Emerald"
+              value="emerald"
+              checked={theme === "emerald"}
+              onChange={handleThemeChange}
+            />
+          </li>
           <input
             type="radio"
             name="theme-dropdown"
             className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Dark"
-            value="dark"
-            checked={theme === "dark"}
+            aria-label="Night"
+            value="night"
+            checked={theme === "night"}
             onChange={handleThemeChange}
           />
         </li>
@@ -50,9 +61,9 @@ const ThemeController = () => {
             type="radio"
             name="theme-dropdown"
             className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Light"
-            value="winter"
-            checked={theme === "winter"}
+            aria-label="Forest"
+            value="forest"
+            checked={theme === "forest"}
             onChange={handleThemeChange}
           />
         </li>
@@ -94,75 +105,9 @@ const ThemeController = () => {
             type="radio"
             name="theme-dropdown"
             className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Coffee"
-            value="coffee"
-            checked={theme === "coffee"}
-            onChange={handleThemeChange}
-          />
-        </li>
-        <li>
-          <input
-            type="radio"
-            name="theme-dropdown"
-            className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Aqua"
-            value="aqua"
-            checked={theme === "aqua"}
-            onChange={handleThemeChange}
-          />
-        </li>
-        <li>
-          <input
-            type="radio"
-            name="theme-dropdown"
-            className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Emerald"
-            value="emerald"
-            checked={theme === "emerald"}
-            onChange={handleThemeChange}
-          />
-        </li>
-        <li>
-          <input
-            type="radio"
-            name="theme-dropdown"
-            className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Cupcake"
-            value="cupcake"
-            checked={theme === "cupcake"}
-            onChange={handleThemeChange}
-          />
-        </li>
-        <li>
-          <input
-            type="radio"
-            name="theme-dropdown"
-            className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Synthwave"
-            value="synthwave"
-            checked={theme === "synthwave"}
-            onChange={handleThemeChange}
-          />
-        </li>
-        <li>
-          <input
-            type="radio"
-            name="theme-dropdown"
-            className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
             aria-label="Luxury"
             value="luxury"
             checked={theme === "luxury"}
-            onChange={handleThemeChange}
-          />
-        </li>
-        <li>
-          <input
-            type="radio"
-            name="theme-dropdown"
-            className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Dracula"
-            value="dracula"
-            checked={theme === "dracula"}
             onChange={handleThemeChange}
           />
         </li>

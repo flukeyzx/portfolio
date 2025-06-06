@@ -17,10 +17,7 @@ import { FcLinux } from "react-icons/fc";
 import school from "../assets/bukhari.jpg";
 import college from "../assets/millat.jpg";
 import university from "../assets/uni.jpg";
-import lingo1 from "../assets/project/Screenshot (131).png";
-import lingo2 from "../assets/project/Screenshot (83).png";
-import lingo3 from "../assets/project/Screenshot (84).png";
-import lingo4 from "../assets/project/Screenshot (85).png";
+
 import servis2 from "../assets/project/Screenshot (94).png";
 import servis3 from "../assets/project/Screenshot (95).png";
 import servis4 from "../assets/project/Screenshot (96).png";
@@ -31,33 +28,6 @@ import photography1 from "../assets/project/Screenshot (127).png";
 import photography2 from "../assets/project/Screenshot (128).png";
 import photography3 from "../assets/project/Screenshot (129).png";
 import photography4 from "../assets/project/Screenshot (130).png";
-import property1 from "../assets/project/Screenshot (102).png";
-import property2 from "../assets/project/Screenshot (103).png";
-import property3 from "../assets/project/Screenshot (104).png";
-import property4 from "../assets/project/Screenshot (105).png";
-import property5 from "../assets/project/Screenshot (106).png";
-import property6 from "../assets/project/Screenshot (107).png";
-import property7 from "../assets/project/Screenshot (108).png";
-import property8 from "../assets/project/Screenshot (109).png";
-import property9 from "../assets/project/Screenshot (110).png";
-import property10 from "../assets/project/Screenshot (111).png";
-import property11 from "../assets/project/Screenshot (112).png";
-import property12 from "../assets/project/Screenshot (113).png";
-import property13 from "../assets/project/Screenshot (114).png";
-import property14 from "../assets/project/Screenshot (115).png";
-import blog1 from "../assets/project/Screenshot (116).png";
-import blog2 from "../assets/project/Screenshot (117).png";
-import blog3 from "../assets/project/Screenshot (118).png";
-import blog4 from "../assets/project/Screenshot (119).png";
-import blog5 from "../assets/project/Screenshot (120).png";
-import blog6 from "../assets/project/Screenshot (121).png";
-import blog7 from "../assets/project/Screenshot (122).png";
-import blog8 from "../assets/project/Screenshot (123).png";
-import blog9 from "../assets/project/Screenshot (124).png";
-import blog10 from "../assets/project/Screenshot (125).png";
-import blog11 from "../assets/project/Screenshot (126).png";
-import music1 from "../assets/project/Screenshot (86).png";
-import music2 from "../assets/project/Screenshot (87).png";
 
 export const skills = [
   {
@@ -173,93 +143,166 @@ export interface ProjectType {
   link?: string;
   github?: string;
   description: string;
-  tech: string;
+  tech: string[];
+  features: string[];
 }
 
 export const projects: ProjectType[] = [
   {
     id: 1,
-    name: "Lingo Language Learning",
-    images: [lingo1, lingo2, lingo3, lingo4],
-    link: "https://lingo-language-learning-rho.vercel.app/",
-    github: "https://github.com/flukeyzx/language-learning-react",
+    name: "Joblix - Job Portal (Final Year Project)",
+    images: [
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147572/YWp5ZjJlemd0MDlkdzR5bWdkeXY=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147925/ejEzeDVzZWw2bGdja2VxY3RjY3E=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147691/Y3NwMnlvdzF2d25yM25sa2s5M20=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147959/YWNlZnZoa3c1cWlvdno4azhuamw=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147991/bGY4bm1wem05bTh3YTVvdXl5ZXA=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749149555/eXkzaXlqc2xtanV4bDh1b3VxM3E=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749149620/dTFpY2FrNnR1azZseDB2bm9ndGs=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147753/ZzNscjFud2xmOG5rMnNpdmVtZ3g=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147721/bnJwOGt6bnY2eWs5cGV4OHJ6dTg=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147784/d3VlMnE2b2U4OHR5anhva2swcGk=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749149755/dXBoeHV2c2J6eGtzdnV4dWkydHQ=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147814/dndxbXNhY3Z6c3J1bmVkd2NoaDM=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147841/eXpuNmdkcnN6a2d2OGdhdmI0Ymg=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147892/eXVid2hnb2dvNWxvZ3NnMDhva3Q=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749147899/ZHZxY3dmOWZlenV5Y2k2Nzlvd3Q=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749148018/dmR0bXRuamRvZ3RzeWZqcmFoaWE=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749148489/eHF5Z2p6dnByNndycXlkZGxlYWk=/drilldown",
+    ],
+    link: "",
+    github: "https://github.com/flukeyzx/fyp",
     description:
-      "I have created a basic language learning application named Lingo. This application has three major features. First, you can choose the language you want to learn, then eight random words with their meanings in English will appear. After that, you'll be given a quiz that contains the same words you have learned. Finally, a result page will appear displaying your score. If you score more than 50%, you will pass. This application is built using React and Redux Toolkit for state management.",
-    tech: "React.js, ReduxToolKit, Material UI, Microsoft Translation API",
+      "Joblix is a full-stack job portal designed to connect job seekers with employers. Key features include user authentication, profile customization, resume upload, job posting and application tracking systems, personalized dashboards, and role-based access for recruiters and applicants.",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "React Query",
+      "Postgresql",
+      "Prisma ORM",
+      "Node.js",
+      "Express.js",
+      "Google Gemini API",
+    ],
+    features: [
+      "JWT-based user authentication with google Oauth, OTP, forgot & rest passwords",
+      "Custom Email DNS (.tech) connected via Mailgun for sending Emails",
+      "Job posting, searching & filtering, and application workflows",
+      "Profile customization upload avatar & resume, edit profile data",
+      "AI features like Complete profile with AI, get ATS score, generate job description",
+      "Rich text editor and complex forms for creating companies & jobs",
+      "Notifications system for recruiters and applicants",
+    ],
   },
   {
     id: 2,
-    name: "Servis Shoes UI Design",
-    images: [servis2, servis3, servis4, servis5, servis6, servis7],
-    link: "https://servis-clone.netlify.app/",
-    github: "https://github.com/flukeyzx/Servis-Shoes-Landing-Page",
+    name: "A Social Media Application - (X Clone)",
+    images: [
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749207792/n3tvvga1djs33gzysc2r.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749207685/rzce0jmqlhbl31eswy18.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749207913/jinjzngeypten5rdhfq1.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749208042/qmqnjvvyjy4aq6yom5gn.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749208079/mg74rfxifw0swzkqtfaf.png",
+    ],
+    link: "",
+    github: "https://github.com/flukeyzx/twitter",
     description:
-      "I have created a Landing page of a famous shoe brand of my country called servis shoes. I have built the User Interface using tailwind css. This page only contains the static content. But the code is written with some sort of industry best practices like separte data arrays etc.",
-    tech: "React.js, Tailwindcss",
+      "A social media app inspired by X (Twitter), simulating social interactions with a clean UI and scalable backend. Users can post content and network with people while customizing there profile.",
+    tech: ["React.js", "Tailwind CSS", "Node.js", "MongoDB", "Express.js"],
+    features: [
+      "Post, like, comment, and reply system",
+      "Notiications System for likes, follows and comments",
+      "JWT-authenticated user sessions",
+      "Image uploads, and follow system",
+      "Clean, mobile-first responsive UI",
+    ],
   },
   {
     id: 3,
-    name: "Photography Portfolio Website UI/UX",
-    images: [photography1, photography2, photography3, photography4],
-    link: "https://photography-contact.netlify.app/",
-    github: "https://github.com/flukeyzx/Photography-Portfolio",
+    name: "Property Rental Platform - (Airbnb Clone)",
+    images: [
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749148719/YjVnNWdxNnh2YmlmeTV5dTV6ODg=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749148752/cXlsNTJkMGJhenZtcWYxZ2JicGw=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749148782/dGJubzk2aXB6dXZxYXBibDFmNGY=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749148823/eXp1MHdnYzRmb2NzMmt6M2g4enA=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749148859/dTVmZmU2cWh1M25tbGUydHIxbnM=/drilldown",
+      "https://res-console.cloudinary.com/dvmyuuouh/thumbnails/v1/image/upload/v1749148894/bmtxY2dhamh2eGF0N3lwZm8zMXc=/drilldown",
+    ],
+    github: "https://github.com/flukeyzx/airbnb-clone",
     description:
-      "This website is created using framer-motion and styled components as this website contains animations and fully responsive design. The main motivation of starting out this project was that I wanted to build a UI/UX website that contains animations like text animations, page animations etc.",
-    tech: "React.js, framer-motion, styled components",
+      "A full-stack Airbnb-style app for booking and managing rental properties with authentication and image uploads. Users can list there rental properties through complex forms and manage them. Interested users can book these properties and create orders.",
+    tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
+    features: [
+      "JWT-based auth system",
+      "Cloudinary for storing assets",
+      "Property creation/edit/delete with image upload",
+      "Booking workflow with availability logic",
+      "Responsive UI design",
+    ],
   },
   {
     id: 4,
-    name: "Full Stack Booking Application",
+    name: "MERN Blog Platform - Blog Stream",
     images: [
-      property1,
-      property2,
-      property3,
-      property4,
-      property5,
-      property6,
-      property7,
-      property8,
-      property9,
-      property10,
-      property11,
-      property12,
-      property13,
-      property14,
-    ],
-    github: "https://github.com/flukeyzx/full-stack-property-booking-app",
-    description:
-      "This is the full stack property booking application, In which I have cloned some of the main features and functionalities of Airbnb. This application has authentication that uses jwt in the backend and context Api in the frontend for user authentication. The main features of this application are user authentication, image uploading on the server, creating updating a property, booking a property. This application uses various packages and libraries.",
-    tech: "MongoDB, React.js, Tailwindcss, Express.js, Node.js",
-  },
-  {
-    id: 5,
-    name: "Full Stack Blog Application",
-    images: [
-      blog1,
-      blog2,
-      blog3,
-      blog4,
-      blog5,
-      blog6,
-      blog7,
-      blog8,
-      blog9,
-      blog10,
-      blog11,
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749146377/Screenshot_63_nwgfot.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749148958/ewyjgy4lfqeaihyszcsi.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749148963/ml67bjipaxw4rqeubamt.png",
     ],
     github: "https://github.com/flukeyzx/Blog-App-MERN",
     description:
-      "This is a full stack blog application. The main features of this application are user authentication, Rich Text editor, dark and light theme, Searching and filtering, paggination Api, CRUD operations on blogs and image uploading on the server.",
-    tech: "MongoDB, React.js, Tailwindcss, Express.js, Node.js",
+      "A blogging platform with a markdown editor, theming, pagination, and full CRUD capabilities. Pagination & filtering API for efficient access of blogs.",
+    tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
+    features: [
+      "Rich text editor with image upload",
+      "Dark/light theme toggle",
+      "Paginated and searchable blogs",
+      "Filteration and search features",
+      "Responsive UI Design",
+    ],
+  },
+  {
+    id: 5,
+    name: "Photography Portfolio with Animations",
+    images: [
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749209481/Screenshot_127_fn5vyi.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749209481/Screenshot_128_mlcwte.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749209481/Screenshot_129_pnfhkb.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749209480/Screenshot_130_a5gt4x.png",
+    ],
+    link: "",
+    github: "https://github.com/flukeyzx/Photography-Portfolio",
+    description:
+      "A visually engaging photography portfolio using React and Framer Motion, designed for creative professionals.",
+    tech: ["React.js", "Tailwind CSS", "Framer Motion", "Styled Components"],
+    features: [
+      "Smooth scroll-based animations",
+      "Photo gallery with modal preview",
+      "Responsive and elegant layout",
+      "Creative hover effects and transitions",
+    ],
   },
   {
     id: 6,
-    name: "A basic Music player application",
-    images: [music1, music2],
-    link: "https://musicaly-react.netlify.app/",
-    github: "https://github.com/flukeyzx/Music-App-using-React",
+    name: "Servis Local Shoes Brand UI/UX Design",
+    images: [
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749209603/Screenshot_94_jugdwz.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749209604/Screenshot_95_botp0b.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749209603/Screenshot_96_xjugw7.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749209605/Screenshot_97_tyzveu.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749209604/Screenshot_98_ijklca.png",
+      "https://res.cloudinary.com/dvmyuuouh/image/upload/v1749209604/Screenshot_99_vk9x9r.png",
+    ],
+    link: "",
+    github: "https://github.com/flukeyzx/Servis-Shoes-Landing-Page",
     description:
-      "This is a basic Music player application build in React. This application has features like skipping song, and controlling the song in the middle of the play. This application has the controll player and it uses SASS for styling. I have used the audio files and images link from a thrid party website.",
-    tech: "React.js, SASS",
+      "A responsive e-commerce UI for a shoe store inspired by Servis Shoes, built with clean component structure and modern UI/UX.",
+    tech: ["React.js", "Tailwind CSS"],
+    features: [
+      "Hero section with carousel",
+      "Product grid with filtering options",
+      "Category-based navigation",
+      "Add to cart UI flow with animation",
+    ],
   },
 ];

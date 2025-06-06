@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: theme('colors.primary');
-  --secondary-color: theme('colors.secondary');
+  --primary-color: theme("colors.primary");
+  --secondary-color: theme("colors.secondary");
 }
 
 :root {
@@ -24,7 +24,11 @@ textarea {
 }
 
 .gradient-letter {
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -49,8 +53,8 @@ button {
   overflow: hidden;
 }
 .custom-scrollbar {
-  scrollbar-width: thin; 
-  scrollbar-color: transparent transparent; 
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar {

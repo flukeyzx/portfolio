@@ -5,16 +5,24 @@ import { FaFacebook } from "react-icons/fa";
 import { FaReddit } from "react-icons/fa";
 import { useSnackbar } from "notistack";
 import { FormEvent, useState } from "react";
+import { Loader2 } from "lucide-react";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const { enqueueSnackbar } = useSnackbar();
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-
+    if (!email || !message) {
+      enqueueSnackbar("Enter both Email and Message before sending Message.", {
+        variant: "warning",
+      });
+      return;
+    }
+    setLoading(true);
     try {
       await fetch("https://formspree.io/f/mkgwrbad", {
         method: "POST",
@@ -29,6 +37,10 @@ const Contact = () => {
       setMessage("");
     } catch (error) {
       enqueueSnackbar("Error sending email", { variant: "error" });
+    } finally {
+      setLoading(false);
+      setEmail("");
+      setMessage("");
     }
   };
   return (
@@ -36,7 +48,7 @@ const Contact = () => {
       id="contact"
       className="flex flex-col justify-center items-center mt-20 relative"
     >
-      <h2 className="text-4xl max-sm:text-2xl font-bold">
+      <h2 className="text-3xl md:text-4xl max-sm:text-2xl font-bold">
         Contact Information
       </h2>
       <div className="flex max-sm:flex-col max-sm:gap-4 justify-center items-center w-full max-w-5xl mt-8 px-6 py-4">
@@ -96,8 +108,15 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <button className="bg-primary py-3 text-white font-semibold rounded-xl hover:opacity-75">
-              Send
+            <button className="bg-primary py-3 text-primary-content font-semibold rounded-xl hover:opacity-75">
+              {loading ? (
+                <div className="flex items-center gap-1 justify-center">
+                  <Loader2 className="animate-spin" />
+                  Send
+                </div>
+              ) : (
+                "Send"
+              )}
             </button>
           </form>
         </div>

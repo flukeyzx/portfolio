@@ -12,7 +12,7 @@ const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
   let storedTheme = (localStorage.getItem("theme") as Theme) || null;
   if (!storedTheme) {
-    storedTheme = "light";
+    storedTheme = "emerald";
   }
   const [theme, setTheme] = useState(storedTheme);
   const html = document.querySelector("html")?.classList!;
@@ -30,7 +30,7 @@ const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+    setTheme((prev) => (prev === "dark" ? "emerald" : "dark"));
   };
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
